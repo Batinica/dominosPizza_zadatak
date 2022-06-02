@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML PIZZERIA ZADATAK 2</title>
+    <style>
+        div .jelovnik {
+            text-align: center;
+        }
+        div .kontakt {
+            text-align: center;
+        }
+        .container {
+           cursor: pointer;
+
+        }
+        .button1 {
+            text-align: center ;
+            width: 100px;
+            height:60px;
+            background-color: rgb(68, 82, 209);
+            border: none;
+            font-size: 15px;
+            font-family: "Calibri";
+            color: white;
+        }
+        .div1 {
+            background-color: lightgray;
+        }
+        .div1 input, select, textarea {
+            width: 100%;
+            padding: 10px 0px;
+            margin: 5px;
+        }
+        .td1 {
+            width: 50%;
+        }
+        .td2 {
+           width: 50%;
+        }
+        .dropdown {
+            width: 80%;
+            height: 90%;
+            margin: auto;
+            background-color: white;
+            padding: 25px;
+        }
+        footer {
+            background-color: rgb(104, 11, 11);
+            text-align: center;
+            color: white;
+            width: 100%;
+            height: 30px;
+        }
+        figcaption {
+            text-align: center;
+        }
+   
+    </style>
+</head>
+<body>
+    <div>
+        <table style="background-color: rgb(104, 11, 11);" width="100%" height="50%">
+            <tr>
+                <td align="left" style="color: white;" width="50%">
+                    <ul>
+                        <li>tel:<span>(023)312 826</span></li>
+                    </ul>
+                </td>
+                <td align="right" width="50%" >
+                    <img src="image/Zastava HRV.png" width="30px" height="20px" alt="hrv zastava">
+                    <img src="image/Zastava BRIT.png" width="30px" height="20px" alt="brit zastava">
+                </td>
+            </tr>
+        </table>
+        <!--IZBORNIK-->
+        <header>
+            <nav>
+                <table width="100%" style="background-color: lightgray;">
+                    <tr>
+                        <td align="center" style="width: 14%;" >
+                            <a href="https://www.dominos.hr/hr/" target="_blank"><strong>NASLOVNA</strong></a></td>
+                        <td align="center" style="width: 14%;" >
+                            <a href="https://www.dominos.hr/hr/pages/order/menu#!/menu/category/viewall/" target="_blank" ><strong>MENI</strong></a></td>
+                        <td align="center" style="width: 14%;">
+                            <a href="https://www.dominos.hr/hr/pages/order/#!/locations/search/" target="_blank"  style="color: red;"><strong>ONLINE NARUDŽBA</strong></a></td>
+                        <td align="center" style="width: 14%;">
+                            <a href="https://www.dominos.hr/hr/pages/tracker/#!/track/order/" target="_blank"><img src="image/Domino png.png" width="120px" height="120px" alt="domino_logo"></a></td>
+                        <td align="center" style="width: 14%;">
+                            <a href="https://www.dominos.hr/hr/about-pizza/"target="_blank" ><strong>O NAMA</strong></a></td>
+                        <td align="center" style="width: 14%;">
+                            <a href="https://www.dominos.hr/hr/pages/order/coupon#!/coupon/national/" target="_blank"><strong>NOVOSTI</strong></a></td>
+                        <td align="center" style="width: 14%;">
+                            <a href="mailto:daria.batinica@hotmail.com" target="_blank"><strong>KONTAKT</strong></a></td>
+                    </tr>
+                </table>
+            </nav>
+        </header>
+        <br>
+        <!--JELOVNIK-->
+        <div class="jelovnik">
+            <button style="background-color: rgb(104, 11, 11); color: white; font-size: 40px; width: fit-content; height: fit-content;">JELOVNIK</button>
+        </div>
+        <br><br><br>
+        <!--MENI-->
+        <div>
+            <table border="3" style="background-color: lightgray;" width="100%">
+                <tr>
+                    <th colspan="2" style="color: rgb(104, 11, 11);" align="center">  
+                        <h2> &#8226; PIZZA &#8226; </h2>
+                    </th>
+                </tr>
+                <tr>
+                    <td width="50%">
+                        <table width="100%" >
+                            <tr>
+                                <td style="padding-left: 20px; width: 80%;">Italiana <hr> </td> 
+                                <td rowspan="2" align="center"><img src="image/Italiana.jpg" alt="" style="border-radius: 50px; width: 70px; height: 70px; padding: auto;"></td>
+                            </tr>
+                            <tr>
+                                <td style="padding-left: 20px;">rajčica, mozzarela, rikula</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <!--DOBRO-->
+                    <td width="50%">
+                        <table width="100%">
+                            <tr>
+                                <td style="padding-left: 20px; width: 80%;">Quattro Formaggio <hr> </td>
+                                <td rowspan="2" align="center"><img src="image/Quattro formagio.jpg"" style="border-radius: 50px; width: 70px; height: 70px;"></td>
+                            </tr>
+                            <tr>
+                                <td style="padding-left: 20px;">rajčica, mozzarela, sir, gorgonzola, parmezan, maslina</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!--DOBRO-->
+                <tr>
+                    <td width="50%">
+                        <table width="100%">
+                            <tr>
+                                <td style="padding-left: 20px; width: 80%;">Mexicana Salsa <hr> </td>
+                                <td rowspan="2" align="center"><img src="image/Mexicana.jpg" alt="" style="border-radius: 50px; width: 70px; height: 70px;"></td>
+                            </tr>
+                            <tr>
+                                <td style="padding-left: 20px;">umak od salse, sir, kulen, špek, kukuruz, grah, kapula, ljuti feferoni</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td width="50%">
+                        <table width="100%">
+                            <tr>
+                                <td style="padding-left: 20px; width: 80%;">Vegeteriana <hr> </td>
+                                <td rowspan="2" align="center"><img src="image/Vegetarijana.jpg" alt="" style="border-radius: 50px; width: 70px; height: 70px;"></td>
+                            </tr>
+                            <tr>
+                                <td style="padding-left: 20px;">rajčica, gljive, sezonsko povrće, maslina</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!--DOBRO-->
+                <tr>
+                    <td width="50%">
+                        <table width="100%">
+                            <tr>
+                                <td style="padding-left: 20px; width: 80%;">Italiana (Raffaele Esposito) <hr> </td>
+                                <td rowspan="2" align="center"><img src="image/Italiana.jpg" alt="" style="border-radius: 50px; width: 70px; height: 70px;"></td>
+                            </tr>
+                            <tr>
+                                <td style="padding-left: 20px;">rajčica, mozzarela, bosiljak</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td width="50%">
+                        <table width="100%">
+                            <tr>
+                                <td style="padding-left: 20px; width: 80%;">Calzona Pizzara Style <hr> </td>
+                                <td rowspan="2" align="center"><img src="image/Calcone.jpg" alt="" style="border-radius: 50px; height: 70px; width: 70px;"></td>
+                            </tr>
+                            <tr>
+                                <td style="padding-left: 20px;">umak od rajčice, šunka, panceta, salama, vrhnje, paprika, mozzarela</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                    <!--DOBRO-->
+                <tr>
+                    <td width="50%">
+                        <table width="100%">
+                            <tr>
+                                <td style="padding-left: 20px; width: 80%;">Funghi <hr> </td>
+                                <td rowspan="2" align="center"><img src="image/Funghi.jpg" alt="" style="border-radius: 50px; width: 70px; height: 70px;"></td>
+                            </tr>
+                            <tr>
+                                <td style="padding-left: 20px;">rajčica, gljive, sir, maslina</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td width="50%">
+                        <table width="100%">
+                            <tr>
+                                <td style="padding-left: 20px; width: 80%;">Calzona Quattro Formaggio/4 vrste sira <hr> </td>
+                                <td rowspan="2" align="center"><img src="image/Calcone.jpg" alt="" style="border-radius: 50px; width: 70px; height: 70px;"></td>
+                            </tr>
+                            <tr>
+                                <td style="padding-left: 20px;">umak od rajčice, gorgonzola, mozzarella, grana padano, mozzarella di buffala</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <!--KONTAKT-->
+        <div class="kontakt">
+            <button style="background-color: rgb(104, 11, 11); color: white; width: fit-content; height: fit-content; font-size: 40px;">KONTAKT</button>
+        </div>
+        <br>
+        <div class="div1">
+            <table class="tabletable">
+            <tr>
+                <td class="td1">
+                    <div class="dropdown">
+                        <h2>Kontaktirajte nas</h2>
+                        <form action="image/thank_you.jpg" target="_blank" method="get">
+                            <select name="pizza" id="">
+                            <option value="" selected disabled hidden>Koju pizzu želite naručiti</option>
+                            <option value="italiana">Italiana</option>
+                            <option value="quattro_formaggio">Quattro Formaggio</option>
+                            <option value="mexican_salsa">Mexican salsa</option>
+                            <option value="vegeteriana">Vegeteriana</option>
+                            <option value="Italiana_raffaele_esposito">Italiana (Raffaelle Esposito)</option>
+                            <option value="calzona_pizzara_style">Calzona Pizzara Style</option>
+                            <option value="funghi">Funghi</option>
+                            <option value="calzona_quattro_formaggio">Calzona Quattro Formaggio</option>    
+                            </select>
+                            <br>
+                            <p>
+                                    <input type="text" name="ime_i_prezime" id="ime_i_prezime" placeholder="Ime i prezime*" required>
+                                </p>
+                                <p>
+                                    <input type="email" name="email" id="email" placeholder="Email*" required>
+                                </p>
+                                <p>
+                                    <input type="tel" name="" id="" placeholder="Telefon*" size="50" required>
+                                </p>
+                                <p>
+                                    <textarea name="" id="" cols="50" rows="5" placeholder="Poruka*"></textarea>
+                                </p>
+                                <br><br>
+                                <p>
+                                    Slanjem upita putem ovog obrasca potrvđujete kako ste upoznati s <a href="https://www.dominos.hr/hr/#/content/privacy/">Pravila o <br> <wbr> privatnosti</a> Pizzara i slažete se s njima. Ovime također dajete suglasnost (privolu) za <br> <wbr> prikupljanje podataka i obradu osobnih podataka navedenih u obrascu, a koji su nam <br> <wbr> neophodni da bi smo mogli udovoljiti Vašem zahtjevu.
+                                </p>
+                                <p>
+                                    <input style="text-align: left; width: auto;" type="checkbox" name="" id="">
+                                    <label class="container" for="">Slažem se</label>
+                                </p>
+                                <p style="text-align: center;">
+                                    <button class="button1" type="submit">Pošalji upit</button>                           
+                                </p>
+                        </form>
+                    </div>          
+                   
+                </td>
+                <td class="td2">
+                    <div class="dropdown">
+                        <h2 valign="top">INFO</h2>
+                        <p><a href="mailto:info@domino.hr">info@domino.hr</a></p>
+                        <p>
+                            <span>(023) 312 826</span>
+                        </p>
+                        <p> Vaša adresa 1</p>
+                        <p>22000 Šibenik</p>
+                        <p>
+                            <a href="https://www.facebook.com" target="_blank"><img src="image/Facebook1.png" width="7%" height="7%" alt=""></a>
+                            <a href="https://www.instagram.com" target="_blank"><img src="image/Instagram.png" width="7%" height="7%" alt=""></a> 
+                            <a href="https://brand.linkedin.com/downloads" target="_blank"><img src="image/LinkIn2.png" width="7%" height="7%" alt=""></a> 
+                        </p>
+                        <br>
+                        <fieldset style="width: fit-content;">
+                            <legend> <a href="https://www.dominos.hr/hr/">Radno vrijeme</a></legend>
+                            <section>
+                                <p>
+                                    <ul>
+                                        <li>Ponedjeljak-Petak: 09:00-23:00</li>
+                                        <li>Subota: 12:00-23:00</li>
+                                        <li>Nedjelja: NE RADIMO</li>
+                                    </ul>
+                                </p>
+                            </section>
+                        </fieldset>
+                    </div>
+                </td>
+            </tr>
+            </table>
+                <div>
+                    <section>
+                            <figure>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.1527734229217!2d15.982122315569024!3d45.80819867910651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d7d1a7425b8d%3A0x2dbe0c1d6a07d96!2sDomino&#39;s%20Pizza!5e0!3m2!1shr!2shr!4v1644483377716!5m2!1shr!2shr" width="100%" height="450px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            <figcaption>Naša lokacija, 10000 Zagreb</figcaption>
+                            </figure>
+                    </section>
+                    <footer>pizzeria.com</footer>
+                </div>
+                </div>
+                </div>
+                </body>
+                </html> 
